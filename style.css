@@ -1,35 +1,36 @@
 /* Default style */
 
-*{
+* {
     font-family: "Lato", serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.container{
+.container {
     width: 75%;
     margin: auto;
 }
 
-.primary-clr{
+.primary-clr {
     font-size: 0.8rem;
     color: #727272;
 }
 
-.primary-btn{
+.primary-btn {
     background-color: #ff900e;
     border-radius: 5px;
     font-weight: bold;
     padding: 15px 25px;
     color: white;
     border: none;
+    cursor: pointer;
 }
 
 
 /* Header section style */
 
-header{
+header {
     background-color: #fff4e7;
     margin-bottom: 100px;
 }
@@ -79,12 +80,53 @@ nav ul li a {
     margin-bottom: 20px;
 }
 
-.banner img{
+.banner img {
     width: 100%;
     padding: 30px 0px;
 }
 
 
+/* Feature area style */
+
+.feature {
+    display: flex;
+    gap: 50px;
+    padding: 0px 50px;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.feature-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 50%;
+}
+
+.feature-img img {
+    width: 100%;
+}
+
+.feature-content {
+    width: 50%;
+}
+
+.feature-content h2 {
+    font-size: 2.50rem;
+}
+
+span.gray {
+    color: #727272;
+    font-weight: 500;
+}
+
+span.yellow{
+    color: #ff900e;
+}
+
+.feature-content * {
+    margin-bottom: 20px;
+}
 
 
 
@@ -93,38 +135,51 @@ nav ul li a {
 
 /* small device */
 
-@media only screen and (max-width:576px){
-    .navbar{
+@media only screen and (max-width:576px) {
+    .navbar, .feature {
         flex-direction: column;
     }
 
     nav ul li a {
         font-size: .8rem;
     }
-    
+
     nav {
         padding-top: 20px;
     }
 
-    .banner-content{
+    .banner-content {
         width: 100%;
         padding-top: 30px;
     }
 
-    .banner-content h1{
+    .banner-content h1 {
         font-size: 1.50rem;
     }
 
-    .container{
+    .container {
         width: 85%;
+    }
+
+    .feature-img{
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .feature-content{
+        width: 100%;
+    }
+
+    .feature{
+        padding: 0px;
     }
 
 }
 
 /* Medium device */
 
-@media only screen and (min-width:577px) and (max-width:992px){
-    .navbar{
+@media only screen and (min-width:577px) and (max-width:992px) {
+    .navbar, .feature {
         flex-direction: column;
     }
 
@@ -132,7 +187,17 @@ nav ul li a {
         padding-top: 20px;
     }
 
-    .banner-content{
+    .banner-content {
         padding-top: 30px;
     }
+
+    .feature-img{
+        width: 100%;
+    }
+
+    .feature-content{
+        width: 100%;
+    }
+
+
 }
