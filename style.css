@@ -275,6 +275,24 @@ span.yellow{
     width: 120px;
 }
 
+/* Footer area style */
+
+.footer{
+    background-color: #fff4e7;
+    margin-bottom: 100px;
+    padding: 25px 0px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.footer p {
+    color: #424242;
+    font-size: 0.8rem;
+    word-spacing: 2px;
+}
+
+
+
 
 /* Responsive area style */
 
@@ -409,5 +427,7 @@ span.yellow{
         margin-left: 20px;
     }
 
-
 }
+
+
+/* The design has completed */
