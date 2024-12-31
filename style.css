@@ -197,6 +197,54 @@ span.yellow{
     margin-bottom: 30px;
 }
 
+/* Facts area style */
+
+.facts-content {
+    width: 40%;
+}
+
+.facts-content h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.facts-content p {
+    line-height: 20px;
+}
+
+.facts-card {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.facts-card-item {
+    border: 1px solid #ff900e;
+    border-radius: 5px;
+    text-align: center;
+    padding: 30px;
+}
+
+.facts-card-item img {
+    width: 30px;
+    margin-bottom: 10px;
+}
+
+.facts-card-item h3 {
+    font-size: 1.50rem;
+    font-weight: 800;
+    color: #424242;
+    margin-bottom: 10px;
+}
+
+.facts-card-item p {
+    color: #727272;
+}
+
+.facts {
+    margin-bottom: 100px;
+}
 
 
 /* Responsive area style */
@@ -204,7 +252,7 @@ span.yellow{
 /* small device */
 
 @media only screen and (max-width:576px) {
-    .navbar, .teams {
+    .navbar, .teams, .facts-card {
         flex-direction: column;
     }
 
@@ -264,6 +312,14 @@ span.yellow{
     .card-badge h1{
         font-size: 0.8rem;
     }
+
+    .facts-card-item{
+        margin-bottom: 25px;
+    }
+
+    .facts-content{
+        width: 100%;
+    }
     
 
 }
@@ -302,5 +358,10 @@ span.yellow{
     .team-img{
         width: 100%;
     }
+
+    .facts-content{
+        width: 80%;
+    }
+
 
 }
